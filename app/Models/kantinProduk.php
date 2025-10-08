@@ -9,13 +9,14 @@ class kantinProduk extends Model
 {
     use HasFactory;
 
-    // kasih tahu Laravel nama tabel sebenarnya
+    // Nama tabel sebenarnya
     protected $table = '_product';
 
     protected $fillable = [
         'name',
-        'description',
         'price',
+        'stock',
         'category',
+        'image',
     ];
 }
